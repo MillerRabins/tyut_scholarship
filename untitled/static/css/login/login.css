@@ -1,0 +1,102 @@
+body{
+ 	background: url(/static/image/login/登陆.png) no-repeat center 0;
+	position:absolute;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background-attachment:fixed;
+	background-size: cover;
+	background-position: 50%;
+	font-family: '微软雅黑';
+	margin: 0;
+	padding: 0;
+}
+.form_login_div{
+	position: relative;
+	width: 60%;
+    top:15%;
+	left: 20%;
+    padding: 65px 0px;
+    text-align: center;
+    border-radius: 51px;
+}
+.form_login{
+	margin-top: 100px;
+}
+.jing{
+	position: relative;
+	top:25px;
+	font-size: 41px;
+	font-weight: 500;
+	word-spacing: -6px;
+	color: white;
+}
+.user_pic{
+	height: 41px;
+    width: 43px;
+	position: relative;
+	top:14px;
+	margin-right: -4px;
+}
+.pass_pic{
+	width: 40px;
+	height: 42px;
+	position: relative;
+	top:14px;
+	margin-left: -4px;
+	margin-right: -5px;
+	
+}
+#Name{
+	border: none;
+	height: 39px;
+	outline: none;
+	font-size: 18px;
+	opacity: 0.7;
+	font-family: "微软雅黑";
+	padding-left: 4px;
+}
+#Password{
+	border: none;
+	height: 39px;
+	opacity: 0.7;
+	outline: none;
+	font-size: 18px;
+	margin-right: -4px;
+	font-family: "微软雅黑";
+	padding-left: 4px;
+}
+input[type="submit"]{
+	position: relative;
+	top:-3px;
+	border: none;
+	background: url(/static/image/login/登陆按钮.png) no-repeat;
+	background-size: 104px;
+	color: white;
+	font-weight: 500;
+	height: 40px;
+	padding: 5px 45px 8px 20px;
+	font-size: 17px;
+	border-radius: 0 11px 11px 0;
+	
+}
+.student{
+	position: relative;
+	top:60px;
+}
+.finger{
+	width: 90px;
+	height: 90px;
+}
+.stu{
+	font-family: "微软雅黑";
+	color: white;
+	position: relative;
+	top:-20px;
+	font-weight: 500;
+	letter-spacing:5px;
+	font-size: 18px;
+}
+.stu_window{
+	text-decoration-line: none;
+}

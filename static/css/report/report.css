@@ -1,0 +1,72 @@
+@charset "utf-8";
+/* CSS Document */
+html{
+	background-image: url(/static/image/report/report.png);
+	background-repeat: no-repeat;
+	background-position:left top;
+	background-size: 100% 100%;
+	height: 542px;
+}
+.xito{
+	position: relative;
+	top:-20px;
+	color: white;
+	font-size: 38px;
+	text-align: center;
+}
+.re{	
+	text-align: center;
+	position: relative;
+}
+.Number1{
+	width: 157px;
+	height: 25px;
+	position: relative;
+	text-align: center;
+	top:14px;
+	border-radius: 12px;
+    outline: none;
+    border: 1px none;
+}
+.Number2{
+	width: 157px;
+	height: 25px;
+	position: relative;
+	text-align: center;
+	top:37px;
+	border-radius: 12px;
+    outline: none;
+    border: 1px double #59B4F5;
+}
+.Name2{
+	width: 157px;
+	height: 25px;
+	position: relative;
+	text-align: center;
+	top:58px;
+	border-radius: 12px;
+    outline: none;
+    border: 1px double #59B4F5;
+}
+.Reason{
+	width: 157px;
+	height: 140px;
+	font-size: 15px;
+	resize: none;
+	position: relative;
+	text-align: center;
+	top:78px;
+	border: 1px double #59B4F5;
+	border-radius: 11px;
+	outline: none;
+}
+input[type="submit"]{
+	position: relative;
+	top:100px;
+	width: 95px;
+    height: 30px;
+    border-radius: 12px;
+    outline: none;
+    border: 1px double #59B4F5;
+	background-color: #59B4F5;
+}

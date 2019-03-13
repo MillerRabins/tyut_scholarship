@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+{% load static %}
+<head>
+<meta charset="utf-8">
+<title>report</title>
+<link href={% static 'css/report/report.css' %} rel="stylesheet" type="text/css" />
+<script src={% static 'js/login/sweetalert.min.js'%} ></script>
+</head>
+<script>
+if('{{msg}}' != '')
+		alert('{{msg}}')
+</script>
+<body>
+	<div class="report">
+		<p class="xito">举报系统</p>
+		<form class="re" action="/report/" method="post" >
+			<input type="text" name="number1" class="Number1" autocomplete="off" required pattern="\d{10}"  		placeholder="你的学号" /><br />
+			<input type="text" name="name2" class="Number2" autocomplete="off" required
+				   	placeholder="你的姓名"/><br />
+			<input type="text" name="number2" class="Name2" autocomplete="off" required pattern="\d{10}" placeholder="要举报的学号" /><br />
+			<textarea class="Reason" name = 'report_reason' placeholder="举报理由"></textarea><br />
+			<input type="submit" value="提交" />
+            {% csrf_token %}
+		</form>
+		
+	</div>
+</body>
+</html>

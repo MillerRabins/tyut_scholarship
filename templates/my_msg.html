@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+<body style="text-align: center">
+    <div>
+        <p style="text-align: center;position: relative;top: 40px;font-size: 30px;color: red">该功能暂未开放，点此处返回主页</p>
+        <form action="../my_msg/" method="post" >
+            <input type="submit" value="返回" style="border-radius: 6px;width: 64px;height: 38px; top: 30px;
+position: relative;background-color: black;outline: none;border: none;color:white;">
+            {% csrf_token %}
+        </form>
+    </div>
+</body>
+</html>

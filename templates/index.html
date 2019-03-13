@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+{% load static %}
+<head>
+<meta charset="utf-8">
+<title>奖学金评定系统</title>
+    <link rel="icon" href={% static 'image/login/09.ico' %} />
+<link href={% static 'css/index/index.css' %} rel="stylesheet" type="text/css" />
+{#<script src={% static 'js/index/upload_file.js' %} type="text/javascript"></script>#}
+<script src={% static 'js/index/jquery-3.3.1.min.js' %}></script>
+</head>
+<script>
+    if('{{msg}}' != '')
+		alert('{{msg}}')
+    function Print() {
+		$.post("/index/", { name: "print" ,csrfmiddlewaretoken:'{{ csrf_token }}'},
+			function(date){
+				alert("success")
+	  });
+	}
+	function fixed() {
+		$.post("/index/", { name: "fixed" , csrfmiddlewaretoken:'{{ csrf_token }}'},
+			function(date){
+				alert(date)
+	  });
+	}
+	function mess() {
+		$.post("/index/", { name: "my_message" ,csrfmiddlewaretoken:'{{ csrf_token }}'},
+			function(date){
+				window.open(date)
+	  });
+	}
+</script>
+<body>
+	<div class="index">
+		<div class="top">
+			<span class="TYUT">TYUT</span>
+			<span class="little">奖学金评定系统</span>
+			<span class="choice" >
+				<form action="/index/" method="post" enctype="multipart/form-data" class="upload_file"  >
+					<input type="file" accept="" name="myfile">
+					<button class="upload">综测上传</button>
+                    {% csrf_token %}
+				</form>
+                <button class="print" onclick="Print();window.location.href='{% url 'download' %}'">结果打印</button>
+
+				<button class="fixed"  onClick="window.location.href='{% url 'moban' %}'">样式下载</button>
+				<img class="head_pic" src={% static 'image/index/head.png' %} alt="头像"/>
+				<span class="academy" >信计学院</span>
+			</span>
+		</div>
+		<!--轮播图-->
+		<div class="viewport">
+			<div class="wrap">
+				<img src={% static 'image/index/banner1.png' %} alt="">
+				<img src={% static 'image/index/Banner2.png' %} alt="">
+				<img src={% static 'image/index/Banner3.png' %} alt="">
+			</div>
+		</div>
+		<div class="other">
+			<a class="upload2" href="javascript:void(0)" onClick="" style="text-decoration-line: none">
+				<img src={% static 'image/index/1.png' %} alt="" class="upload_pic" />
+				<span class="shangchuan" >综测上传</span>
+			</a>
+			<a class="print2" href="javascript:void(0)" onClick="Print()" style="text-decoration-line: none">
+				<img src={% static 'image/index/2.png' %} alt="" class="print_pic" />
+				<span class="dayin" onClick="Print()" >结果打印</span>
+			</a>
+			<a class="fixed2" href= {% url 'moban' %} style="text-decoration-line: none">
+				<img src={% static 'image/index/3.png' %} alt="" class="fixed_pic" />
+				<span class="xiugai" >样式下载</span>
+			</a>
+			<span class="me">
+				<a class="message2" href="javascript:void(0)" onClick="mess()" style="text-decoration-line: none">
+				<img src={% static 'image/index/4.png' %} alt="" class="message_pic" />
+				<span class="xinxi" >我的信息</span>
+				</a>
+			</span>
+		</div>
+		<p class="blank">
+			<br />
+		</p>
+	</div>
+</body>
+</html>

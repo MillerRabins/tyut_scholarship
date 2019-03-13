@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+{% load static %}
+<head>
+<meta charset="utf-8">
+	<title>太原理工大学登录页面</title>
+	<link rel="icon" href={% static 'image/login/09.ico' %} />
+	<link href={% static 'css/login/login.css' %} rel="stylesheet" type="text/css" />
+	<script src={% static 'js/login/login.js' %} type="application/javascript"></script>
+	<script src={% static 'js/login/login.js' %}></script>
+</head>	
+<body>
+	<div class="form_login_div">
+		<span class="jing">奖 学 金 评 定 系 统</span>
+		<form class="form_login" action="/login/" method="post">
+			<!-- 用户名 -->
+			<img src={% static 'image/login/用户标志.png' %} alt="用户标识" class="user_pic" />
+			<input type="text" name="username" id="Name" placeholder="   用户名" required autocomplete="off" maxlength="20" />
+			<!-- 密码 -->
+			<img src={% static 'image/login/密码标志.png' %} alt="密码标识" class="pass_pic" />
+			<input type="password" name="password" id="Password" placeholder="   密码" autocomplete="off" required maxlength="20"/>
+			<!-- 登录按钮 -->
+        	<input type="submit" value="登录"/>
+            {% csrf_token %}
+    	</form>
+	<!--学生使用-->
+		<div class="student">
+			<a class="stu_window" href="javascript:void" onClick="student_win()">
+				<img src={% static 'image/login/指纹.png' %} alt="指纹" class="finger" />
+				<p class="stu" >学生入口</p>
+			</a>
+		</div>
+	</div>
+</body>
+</html>

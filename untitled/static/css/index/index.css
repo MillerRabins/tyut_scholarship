@@ -1,0 +1,178 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	font-family: "微软雅黑";
+	
+}
+.top{
+	position: relative;
+	top: 14px;
+	
+}
+.TYUT{
+	color:#3555ae;
+	font-size: 37px;
+	margin-left: 18px;
+	position: relative;
+	top: -4px;
+	
+}
+.little{
+	color:#3555ae;
+	font-size: 19px;
+	position: relative;
+	top:-6px;
+	margin-left: 14px;
+}
+.choice{
+	float: right;
+	position: relative;
+	margin-right: 20px;
+	top: -11px;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+.upload{
+	background-color: transparent;
+	border: none;
+	outline: none;
+	font-size: 18px;
+	margin-right: 0px;
+}
+.upload_file{
+	position: relative;
+	left: -134px;
+	margin: 0px;
+	padding:0px;
+	display: inline-block;
+	overflow: hidden;
+	top:7px;
+	left:-54px;
+}
+.upload_file input{
+	position: relative;
+	top:0;
+	left: 0;
+/*
+	opacity: 0;
+	-ms-filter: 'alpha(opacity=0)';
+*/
+}
+.print{
+	background-color: transparent;
+	border: none;
+	outline: none;
+	font-size: 18px;
+}
+.fixed{
+	margin-left: 48px;
+	background-color: transparent;
+	border: none;
+	outline: none;
+	font-size: 18px;
+	margin-right: 40px;
+}
+.fixed:hover{
+	color:#3555AE;
+	border-bottom-color:#49CBCD;
+	border-bottom-style: solid;
+	
+}
+.print:hover{
+	color:#3555AE;
+	border-bottom-color:#49CBCD;
+	border-bottom-style: solid;
+}
+.upload:hover{
+	color:#3555AE;
+	border-bottom-color:#49CBCD;
+	border-bottom-style: solid;
+}
+.head_pic{
+	margin-left: 20px;
+	width: 43px;
+	height: 43px;
+	margin-right: 7px;
+	position: relative;
+	top: 10px;
+	
+}
+.academy{
+	position: relative;
+	top: 7px;
+	font-size: 15px;
+	margin-right: 28px;
+	color: #3555AE;
+	
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+}
+.viewport {
+	margin-top: 3px;
+    position: relative;
+    overflow: hidden;
+	top: 21px;
+	width: 100%;
+	
+}
+.wrap {
+    position: relative;
+    width: 300vw;
+    overflow: hidden;
+    animation: carousel linear 5s infinite 0s normal;
+}
+.wrap img {
+    display: inline-block;
+    width: 100vw;
+    height: auto;
+    float: left;
+}
+@keyframes carousel {
+    0% {
+        left: 0;
+    }
+    20% {
+        left: -0vw;
+    }
+    40% {
+        left: -100vw;
+    }
+    60% {
+        left: -100vw;
+    }
+    80% {
+        left: -200vw;
+    }
+    100% {
+        left: -200vw;
+    }
+}
+.other{
+	position:relative;
+	top:82px;
+	font-family: "微软雅黑";
+	font-size: 27px;
+	text-decoration-line: none;
+	left: 50%;
+	width: 768px;
+	transform:translate(-40%,0);
+}
+.upload_pic,.fixed_pic,.message_pic,.print_pic{
+	width: 70px;
+	height: 70px;
+}
+.shangchuan,.dayin,.xiugai,.xinxi{
+	position: relative;
+	top: 50px;
+	left: -100px;
+	color: black;	
+}
+.blank{
+	margin-top: 100px;
+	margin-bottom: 100px;
+}

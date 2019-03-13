@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title>奖学金</title>
+    <link href={% static 'css/return/return.css' %} rel="stylesheet" type="text/css"/>
+</head>
+<script>
+if('{{msg}}' != '')
+		alert('{{msg}}')
+</script>
+<body>
+    <div class="message">
+        <p class="my">
+            <span class="name">{{username}}</span>
+            <span class="id_num">{{stu_id}}</span>
+        </p>
+        <table class="garden">
+            <tr>
+                <td>类&nbsp;&nbsp;&nbsp;别</td>
+                <td>排名</td>
+                <td>成绩</td>
+                <td>是否获奖</td>
+            </tr>
+            <tr>
+                <td>文化类</td>
+                <td>{{school_rank}}</td>
+                <td>{{school_score}}</td>
+                <td>{{school_award}}</td>
+            </tr>
+            <tr>
+                <td>实践类</td>
+                <td>{{social_rank}}</td>
+                <td>{{social_score}}</td>
+                <td>{{social_award}}</td>
+            </tr>
+            <tr>
+                <td>学习类</td>
+                <td>{{study_rank}}</td>
+                <td>{{study_score}}</td>
+                <td>{{study_award}}</td>
+            </tr>
+            <tr>
+                <td>科技类</td>
+                <td>{{technical_rank}}</td>
+                <td>{{technical_score}}</td>
+                <td>{{technical_award}}</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

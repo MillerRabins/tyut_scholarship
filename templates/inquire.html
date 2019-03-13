@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+{% load static %}
+<head>
+<meta charset="utf-8">
+<title>inquire</title>
+<link href={% static 'css/inquire/inquire.css' %} rel="stylesheet" type="text/css" />
+</head>
+<script>
+	if('{{msg}}' != '')
+		alert('{{msg}}')
+</script>
+<body>
+	<p class="ty">太原理工大学</p>
+	<div class="inquire">
+		<form class="in" action="/inquire/" method="post" >
+			<input type="text" class="ame" name="username" autocomplete="off" required  placeholder="名字" /><br />
+			<input type="text" class="Number" name="stu_id" autocomplete="off" required  placeholder="学号" pattern="\d{10}" /><br />
+			<p></p>
+			<input type="submit" value="提交" />
+            {% csrf_token %}
+		</form>
+	</div>
+</body>
+</html>
